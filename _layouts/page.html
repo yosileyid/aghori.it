@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  
+  {% include head.html %}
+
+  <body class="d-flex flex-column h-100 bg-dark text-danger">
+    
+    {% include header.html %}
+
+    {% if page.title == "Aghori" %}
+      {% include aghori_main.html %}
+
+        <!-- AGHORI PAGES -->
+
+      {% elsif page.title == "History" %}
+        {% include aghori_main.html %}
+      {% elsif page.title == "24 Gurus" %}
+        {% include aghori_main.html %}
+      {% elsif page.title == "The Great Mother" %}
+        {% include aghori_main.html %}
+
+        <!-- MANTRA PAGES -->
+
+      {% elsif page.title == "Mantras" %}
+        {% include mantra_main.html %}
+      {% elsif page.title == "Namavali" %}
+        {% include mantra_main.html %}
+      {% elsif page.title == "Aghori Mantra" %}
+        {% include mantra_main.html %}
+      {% elsif page.title == "Aghora Kavacham" %}
+        {% include mantra_main.html %}
+      {% elsif page.title == "Aghoramurti Sahasranama" %}
+        {% include mantra_main.html %}
+          <!-- BABAS PAGES -->
+    {% elsif page.title == "Manohar Das" %}
+      {% include aghori_main.html %}
+    {% elsif page.title == "Kishan Das" %}
+      {% include aghori_main.html %}
+    {% elsif page.title == "Govinda Das" %}
+      {% include aghori_main.html %}
+    {% elsif page.title == "Radhika Dasi" %}
+      {% include aghori_main.html %}
+    {% elsif page.title == "Saraswati Dasi" %}
+      {% include aghori_main.html %}
+
+        <!-- DEVA PAGES -->
+
+      {% elsif page.title == "Mahavidya" %}
+        {% include deva_main.html %}
+      {% elsif page.title == "Guhyakali" %}
+        {% include deva_main.html %}
+      {% elsif page.title == "Kali-Ma" %}
+        {% include deva_main.html %}
+      {% elsif page.title == "Shakti Pita" %}
+        {% include deva_main.html %}
+      {% elsif page.title == "Dattatreya" %}
+        {% include deva_main.html %}
+      
+      {% elsif page.title == "Sadhana" %}
+        {% include sadhana_main.html %}
+
+    {% else %}
+      {% include 404.html %}
+    {% endif %}
+  
+    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+  
+</html>
